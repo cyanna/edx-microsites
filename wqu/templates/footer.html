@@ -1,0 +1,43 @@
+## mako
+<%! from django.core.urlresolvers import reverse %>
+<%! from django.utils.translation import ugettext as _ %>
+<%namespace name='static' file='/static_content.html'/>
+<%! from microsite_configuration.templatetags.microsite import platform_name %>
+<script type="text/javascript" src="http://asset0.zendesk.com/external/zenbox/v2.4/zenbox.js"></script>
+
+<div class="wrapper wrapper-footer">
+  <footer>
+    <div class="colophon">
+      <nav class="nav-colophon">
+      </nav>
+
+      <div class="colophon-about">
+        <div class="wqu-footer"><img src="/static/wqu/images/logo.png"/></div>
+        <div class="poweredby-footer"><a href="http://www.cyanna.com"><img src="/static/wqu/images/cyanna.png"/></a></div>
+      </div>
+    </div>
+
+    <div class="references">
+
+      <nav class="nav-legal">
+      </nav>
+    </div>
+  </footer>
+</div>
+<script type="text/javascript">
+
+ $(document).ready(function() {
+   if (typeof(Zenbox) !== "undefined") {
+     Zenbox.init({
+       dropboxID:   "20278318",
+       url:         "https://cyanna.zendesk.com",
+       tabID:       "support",
+       tabColor:    "#066d99",
+       tabPosition: "Right",
+       tabImageURL: "https://s3.amazonaws.com/cyanna/tab_support_bottom.png",
+       requester_name: "wqu edx",
+       requester_email: "wqu edx"
+     });
+    }
+  });
+</script>

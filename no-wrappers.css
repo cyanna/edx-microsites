@@ -1,0 +1,15 @@
+header.global, section.home > header {
+        display: none;
+}
+
+footer {
+        display: none;
+}
+
+article.course > header, .course-image {
+	display: block !important;
+}
+
+.register {
+	display: none !important;
+}

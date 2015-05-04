@@ -1,3 +1,4 @@
+/**
 .logo > a > img {
 	height: 50px;
 }
@@ -28,7 +29,6 @@
   width: 45px;
   z-index: 10000;
 }
-  /* IE won't read ID-and-class selectors like #zenbox_tab.left, so we use just a class: */
   .ZenboxTabLeft {
     left: 0;
     background-position: right 0;
@@ -115,3 +115,4 @@
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
+**/
